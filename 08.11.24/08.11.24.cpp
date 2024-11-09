@@ -85,6 +85,12 @@ public:
         return temp;
     };
 
+    Point& operator=(double obj) {
+        x = obj;
+        y = obj;
+        return *this
+    }
+
     operator double() { return x + y; }
     operator Point() { return Point(x, y);}
 };
